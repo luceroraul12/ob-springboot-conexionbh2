@@ -13,6 +13,7 @@ public class ObSpringEjercicio3Application {
 
 		MensualidadRepository repository = context.getBean(MensualidadRepository.class);
 
+		//desde aca hacia abajo lo hice para probar los metodos que usaré en un proyecto que quiero hacer
 		System.out.println("Mensualidades Registradas: "+ repository.count());
 
 		//insertar un objeto Mensualidad
