@@ -16,9 +16,13 @@ public class ObSpringEjercicio3Application {
 		System.out.println("Mensualidades Registradas: "+ repository.count());
 
 		//insertar un objeto Mensualidad
-		repository.save(new Mensualidad("Rovistar"));
+		repository.save(new Mensualidad("Megastar"));
 		System.out.println("Mensualidades Registradas: "+ repository.count());
-
+		//mostrar contenido
+		System.out.println("Información almacenada: ");
+		for (Mensualidad mensualidad : repository.findAll()){
+			System.out.println(mensualidad);
+		}
 	}
 
 }

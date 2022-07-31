@@ -16,6 +16,9 @@ public class Mensualidad {
     private Long id;
     private String nombre;
 
+    public Mensualidad() {
+    }
+
     //Para crear
     public Mensualidad(String nombre) {
         this.nombre = nombre;
